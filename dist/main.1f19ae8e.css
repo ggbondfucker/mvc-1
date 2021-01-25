@@ -1,0 +1,100 @@
+#app1 button{
+    width: 20px;
+    height: 20px;
+}
+#app1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+#app2 .tab-bar{
+    display: flex;
+}
+#app2 .tab-bar >li{
+    border: 1px solid black;
+    width: 50%;
+}
+
+#app2 .tab-bar >li.selected{
+    background: skyblue;
+}
+
+#app2 .tab-content>li.active{
+    display: block;
+}
+#app2 .tab-content>li{
+    display: none;
+}
+#app3 .movebox{
+    margin-top: 50px;
+    width: 10vh;
+    height: 10vh;
+    background-color: pink;
+    line-height: 10vh;
+    text-align: center;
+    font-size: 5px;
+}
+#app3 .movebox.active{
+    animation: move 2s linear forwards ;
+}
+@keyframes move {
+    0%{}
+    100%{
+        transform: translateX(10vh) translateX(10vh) rotate(360deg) scale(2);
+    }
+}
+#app4 .circle{
+    height: 20vh;
+    width: 20vh;
+    background-color: red;
+    border-radius: 50%;
+    margin: 10% 10%;
+}
+
+#app4 .circle.active{
+    animation: colorchange 5s linear alternate infinite;
+}
+@keyframes colorchange {
+    0%{
+        background-color: red;
+    }
+    15%{
+        background-color: orange;
+    }
+    30%{
+        background-color: yellow;
+    }
+    45%{
+        background-color: green;
+    }
+    60%{
+        background-color: blue;
+    }
+    80%{
+        background-color: purple;
+    }
+    100%{
+        background-color: black;
+    }
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
